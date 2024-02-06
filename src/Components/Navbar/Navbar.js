@@ -25,7 +25,9 @@ const Navbar = () => {
                     <li className="link">
                         <a href="#">Appointments</a>
                     </li>
-
+                    <li className="link">
+                    <Link to="/instant-consultation">Instant Consultation</Link>
+                </li>
                     <li className="link">
                     <Link to="/Sign_Up">
                             <button className="btn1">Sign Up</button>
