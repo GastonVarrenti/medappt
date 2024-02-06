@@ -62,8 +62,20 @@ const Sign_Up = () => {
                  <input value={email} onChange={(e) => setEmail(e.target.value)} type="email" name="email" id="email" className="form-control" placeholder="Enter your email" aria-describedby="helpId" />
                  {showerr && <div className="err" style={{ color: 'red' }}>{showerr}</div>}
                         </div>
+                        <div className="form-group">
+           <label htmlFor="name">Name</label>
+           <input value={name} type="text" onChange={(e) => setName(e.target.value)} name="name" id="name" className="form-control" placeholder="Enter your name" aria-describedby="helpId" />
+       </div>
+       <div className="form-group">
+           <label htmlFor="phone">Phone</label>
+           <input value={phone} onChange={(e) => setPhone(e.target.value)} type="tel" name="phone" id="phone" className="form-control" placeholder="Enter your phone number" aria-describedby="helpId" />
+       </div>
+       <div className="form-group">
+           <label htmlFor="password">Password</label>
+           <input value={password} onChange={(e) => setPassword(e.target.value)} name="password" id="password" className="form-control" placeholder="Enter your password" aria-describedby="helpId" />
 
-//apply logic here for other elements such as name, phone and password to take user information
+       </div>
+    
          </form>
          </div>
          </div>
