@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import './DoctorCard.css';
-import AppointmentForm from '../AppointmentFormIC/AppointmentForm'
+import './DoctorCardIC.css';
+import AppointmentFormIC from '../AppointmentFormIC/AppointmentFormIC'
 import { v4 as uuidv4 } from 'uuid';
 
 
-const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
+const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => {
   const [showModal, setShowModal] = useState(false);
   const [appointments, setAppointments] = useState([]);
 
@@ -104,4 +104,4 @@ const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
   );
 };
 
-export default DoctorCard;
+export default DoctorCardIC;

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import './DoctorCard.css';
+import './DoctorCardIC.css';
 import AppointmentForm from '../AppointmentForm/AppointmentForm'
 import { v4 as uuidv4 } from 'uuid';
 
 
-const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
+const DoctorCardIC = ({ name, speciality, experience, ratings, profilePic }) => {
   const [showModal, setShowModal] = useState(false);
   const [appointments, setAppointments] = useState([]);
 
@@ -41,18 +41,13 @@ const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
           <div className="doctor-card-detail-experience">{experience} years experience</div>
           <div className="doctor-card-detail-consultationfees">Ratings: {ratings}</div>
         </div>
-        <div>  <button className='book-appointment-btn'>                    
-            <div>Book Appointment</div>
-          <div>No Booking Fee</div>
-        </button> </div>
-         
         {/* for reference  */}
-        {<div>
+        {/* <div>
               <button className='book-appointment-btn'>                    
                 <div>Book Appointment</div>
               <div>No Booking Fee</div>
             </button>
-              </div> }
+              </div> */}
       </div>
 
 
@@ -99,7 +94,7 @@ const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
                   ))}
                 </>
               ) : (
-                <AppointmentForm doctorName={name} doctorSpeciality={speciality} onSubmit={handleFormSubmit} />
+                <AppointmentFormIC doctorName={name} doctorSpeciality={speciality} onSubmit={handleFormSubmit} />
               )}
             </div>
           )}
@@ -109,4 +104,4 @@ const DoctorCard = ({ name, speciality, experience, ratings, profilePic }) => {
   );
 };
 
-export default DoctorCard;
+export default DoctorCardIC;
