@@ -28,6 +28,9 @@ const Navbar = () => {
                 <li className="link">
                     <Link to="/search/doctors">Appointments</Link>
                 </li>
+                <li className="link">
+                    <Link to="BookingConsultation">Bookings</Link>
+                </li>
                     <li className="link">
                     <Link to="/Sign_Up">
                             <button className="btn1">Sign Up</button>
